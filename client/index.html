@@ -26,52 +26,27 @@
 
     
     <section class="fan-interactions">
-        <h2>Join the Boozoo Community</h2>
-        <div class="comments">
-            <p>No comments yet. Be the first to share your thoughts about Boozoo!</p>
+        <h2>Fan Comments</h2>
+        
+        <div class="comments-marquee-container">
+            <div class="comments-track">
+                <!-- Comments will be inserted here -->
+            </div>
+
         </div>
+
         <form class="fan-form">
-            <label for="fan-name">Name:</label>
+            <label for="fan-name">Your Name</label>
             <input type="text" id="fan-name" name="fan-name" required>
             
-            <label for="fan-comment">Comment:</label>
+            <label for="fan-comment">Your Message</label>
             <textarea id="fan-comment" name="fan-comment" required></textarea>
             
-            <button type="submit">Submit</button>
+            <button type="submit">Post Comment</button>
         </form>
     </section>
 
 
-    <script>
-        const totalImages = 77;
-        const imagePrefix = 'everyday_boozoo-20241106-';
-        const imageExtension = '.jpg';
-        const rows = document.querySelectorAll('.marquee-row');
-
-        function padNumber(number) {
-            return String(number).padStart(4, '0');
-        }
-
-        function createImage(index) {
-            const img = document.createElement('img');
-            img.src = `images/${imagePrefix}${padNumber(index)}${imageExtension}`;
-            img.alt = `Boozoo ${index}`;
-            img.classList.add('gallery-item');
-            return img;
-        }
-
-        function getRandomImageIndex() {
-            return Math.floor(Math.random() * totalImages) + 1;
-        }
-
-        rows.forEach(row => {
-            for (let i = 0; i < totalImages; i++) {
-                row.appendChild(createImage(getRandomImageIndex()));
-            }
-            for (let i = 0; i < totalImages; i++) {
-                row.appendChild(createImage(getRandomImageIndex()));
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html> 
