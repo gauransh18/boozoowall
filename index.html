@@ -8,13 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <!-- <header class="hero">
-        <img src="@images/boozo-banner.png" alt="Boozoo Banner" class="hero-image">
-        <h1 class="tagline">Meet Boozoo: The Little Orange Doodle Taking Over the Web!</h1>
-    </header> -->
 
-    <!-- Boozoo Gallery Grid -->
     <section class="gallery">
         <div class="marquee-container">
             <div class="marquee-row left-to-right"></div>
@@ -30,34 +24,10 @@
         </div>
     </section>
 
-    <!-- About Boozoo
-    <section class="about">
-        <h2>About Boozoo</h2>
-        <p>Boozoo is a playful little doodle with a heart full of adventures. Born from creativity and a splash of orange, Boozoo loves to explore the web and share his joyful moments with everyone.</p>
-        <img src="@images/boozo-origin.png" alt="Boozoo Origins" class="about-image">
-    </section>
-
-
-    <section class="adventures">
-        <h2>Latest Boozoo Adventures</h2>
-        <div class="adventures-grid">
-            <div class="adventure-item">
-                <img src="@images/adventure1.png" alt="Adventure 1">
-                <p>Exploring the Digital Forest</p>
-            </div>
-            <div class="adventure-item">
-                <img src="@images/adventure2.png" alt="Adventure 2">
-                <p>Boozoo Visits the Pixel Park</p>
-            </div>
-
-        </div>
-    </section> -->
-
-    <!-- Fan Interactions -->
+    
     <section class="fan-interactions">
         <h2>Join the Boozoo Community</h2>
         <div class="comments">
-            <!-- Comment section or fan submissions can be integrated here -->
             <p>No comments yet. Be the first to share your thoughts about Boozoo!</p>
         </div>
         <form class="fan-form">
@@ -71,33 +41,7 @@
         </form>
     </section>
 
-    <!-- Contact & Social Links -->
-    <footer class="footer">
-        <div class="contact">
-            <h2>Contact Us</h2>
-            <form class="contact-form">
-                <label for="contact-name">Name:</label>
-                <input type="text" id="contact-name" name="contact-name" required>
-                
-                <label for="contact-email">Email:</label>
-                <input type="email" id="contact-email" name="contact-email" required>
-                
-                <label for="contact-message">Message:</label>
-                <textarea id="contact-message" name="contact-message" required></textarea>
-                
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <div class="social-links">
-            <h2>Follow Boozoo</h2>
-            <a href="https://facebook.com/Boozoo" target="_blank">Facebook</a>
-            <a href="https://twitter.com/Boozoo" target="_blank">Twitter</a>
-            <a href="https://instagram.com/Boozoo" target="_blank">Instagram</a>
-            <!-- Add more social links as needed -->
-        </div>
-    </footer>
 
-    <!-- JavaScript to dynamically load images -->
     <script>
         const totalImages = 77;
         const imagePrefix = 'everyday_boozoo-20241106-';
@@ -121,11 +65,9 @@
         }
 
         rows.forEach(row => {
-            // Add original random images
             for (let i = 0; i < totalImages; i++) {
                 row.appendChild(createImage(getRandomImageIndex()));
             }
-            // Duplicate the same pattern for seamless scroll
             for (let i = 0; i < totalImages; i++) {
                 row.appendChild(createImage(getRandomImageIndex()));
             }

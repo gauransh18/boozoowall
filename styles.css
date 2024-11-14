@@ -80,7 +80,7 @@ p {
 .marquee-row {
     display: flex;
     gap: 0;
-    animation: scroll 60s linear infinite;
+    animation: scroll 30s linear infinite;
 }
 
 .gallery-item {
@@ -91,11 +91,11 @@ p {
 }
 
 .left-to-right {
-    animation-name: scrollLeft;
+    animation: scrollLeft 30s linear infinite;
 }
 
 .right-to-left {
-    animation-name: scrollRight;
+    animation: scrollRight 30s linear infinite;
 }
 
 @keyframes scrollLeft {
