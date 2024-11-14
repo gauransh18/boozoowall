@@ -235,3 +235,34 @@ p {
         height: 150px;
     }
 }
+
+
+@media (max-width: 1024px) {
+    .left-to-right {
+        animation: scrollLeft 22s linear infinite;
+    }
+    
+    .right-to-left {
+        animation: scrollRight 22s linear infinite;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-to-right {
+        animation: scrollLeft 15s linear infinite;
+    }
+    
+    .right-to-left {
+        animation: scrollRight 15s linear infinite;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-to-right {
+        animation: scrollLeft 8s linear infinite;
+    }
+    
+    .right-to-left {
+        animation: scrollRight 8s linear infinite;
+    }
+}
